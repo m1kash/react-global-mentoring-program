@@ -21,7 +21,7 @@
 }
 
 .root--secondary {
-    background: #f65261;
+    background: var(--portal-red-color);
     color: #fff;
 }
 

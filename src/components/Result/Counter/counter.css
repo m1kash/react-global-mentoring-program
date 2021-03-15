@@ -1,0 +1,14 @@
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.root strong {
+    font-weight: 500;
+    margin-right: 10px
+}

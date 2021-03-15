@@ -1,0 +1,42 @@
+.root {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    width: 220px;
+}
+
+.root::after {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -2px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid var(--portal-red-color);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: ' ';
+    transform: translateX(-50%);
+}
+
+.root__label {
+    margin-right: 10px;
+    color: #555;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.root__select {
+    width: 100%;
+    outline: none;
+    border: 0;
+    background: 0;
+    background: #232323;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    -webkit-appearance: none;
+            appearance: none;
+}

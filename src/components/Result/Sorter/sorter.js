@@ -1,7 +1,9 @@
 import React from 'react';
 import classes from './sorter.css';
+import {useUIDSeed} from 'react-uid';
 
 function Sorter () {
+    const seed = useUIDSeed();
     const options = [
         {
             name: 'Default',
@@ -25,7 +27,7 @@ function Sorter () {
             <label htmlFor="sort" className={classes.root__label}>Sort By</label>
             <select className={classes.root__select} name="sort" id="">
                 {options.map((option) =>
-                <option value={option.value} selected={option.selected} >{option.name}</option>)}
+                <option key={seed(option)} defaultValue={option.value} >{option.name}</option>)}
             </select>
         </div>
     )

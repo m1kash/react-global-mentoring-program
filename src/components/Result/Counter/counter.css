@@ -4,11 +4,11 @@
     justify-content: center;
     height: 70px;
     color: #fff;
-    font-size: 18px;
     font-weight: 300;
+    font-size: 18px;
 }
 
 .root strong {
+    margin-right: 10px;;
     font-weight: 500;
-    margin-right: 10px
 }

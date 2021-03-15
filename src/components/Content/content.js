@@ -5,11 +5,11 @@ import Result from '../Result';
 
 function Content () {
     return (
-        <div className={classes.root}>
+        <main className={classes.root}>
             <Container>
                 <Result />
             </Container>
-        </div>
+        </main>
     )
 }
 

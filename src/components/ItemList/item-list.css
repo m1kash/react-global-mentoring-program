@@ -1,0 +1,11 @@
+.root {
+    display: grid;
+    padding-bottom: 50px;
+    width: 100%;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 50px;
+    grid-template-areas: '. . .'
+    '. . .'
+    '. . .';
+}

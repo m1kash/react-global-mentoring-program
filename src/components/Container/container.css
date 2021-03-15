@@ -1,0 +1,12 @@
+.root {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1090px;
+}
+
+.root--sp {
+    justify-content: space-between;
+}

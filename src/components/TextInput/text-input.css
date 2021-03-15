@@ -1,0 +1,32 @@
+.root {
+    padding: 22px 30px;
+    width: 100%;
+    outline: none;
+    border: 0;
+    border-radius: 3px;
+    background: var(--portal-grey-darker);
+    color: var(--portal-grey-ligher);
+    font-size: 18px;
+
+    -webkit-appearance: none;
+            appearance: none;
+}
+
+.root::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: var(--portal-grey-ligher);
+}
+
+.root:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: var(--portal-grey-ligher);
+}
+
+.root::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: var(--portal-grey-ligher);
+}
+.root:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: var(--portal-grey-ligher);
+}

@@ -1,0 +1,8 @@
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: var(--portal-grey-darker);
+    min-height: 300px;
+}

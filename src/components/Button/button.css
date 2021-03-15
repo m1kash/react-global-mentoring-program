@@ -1,0 +1,41 @@
+.root {
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 3px;
+    box-shadow: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+
+    -webkit-appearance: none;
+            appearance: none;
+}
+
+.root,
+.root:hover,
+.root:focus,
+.root:active {
+    outline: none;
+    border: 0;
+}
+
+.root--secondary {
+    background: var(--portal-red-color);
+    color: var(--portal-white);
+}
+
+.root--secondary:hover {
+    background: #ff3448;
+}
+
+.root--grey {
+    padding: 10px 30px;
+    background: var(--portal-grey-ligher);
+    color: var(--portal-red-color);
+}
+
+.root--grey:hover {
+    background: #2d2d2d;
+}

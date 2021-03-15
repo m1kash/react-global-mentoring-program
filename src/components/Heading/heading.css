@@ -1,0 +1,13 @@
+.root {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+}
+
+.root--h1 {
+    font-size: 40px;
+}
+
+.root--h2 {
+    font-size: 35px;
+}

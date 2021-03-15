@@ -1,0 +1,40 @@
+.root {
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 3px;
+    box-shadow: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    -webkit-appearance: none;
+            appearance: none;
+}
+
+.root,
+.root:hover,
+.root:focus,
+.root:active {
+    border: 0;
+    outline: none;
+}
+
+.root--secondary {
+    background: #f65261;
+    color: #fff;
+}
+
+.root--secondary:hover {
+    background: #ff3448;
+}
+
+.root--grey {
+    padding: 10px 30px;
+    background: #555;
+    color: #f65261;
+}
+
+.root--grey:hover {
+    background: #2d2d2d;
+}

@@ -22,7 +22,7 @@
 
 .root__label {
     margin-right: 10px;
-    color: #555;
+    color: var(--portal-grey-ligher);
     text-transform: uppercase;
     white-space: nowrap;
 }
@@ -32,8 +32,8 @@
     outline: none;
     border: 0;
     background: 0;
-    background: #232323;
-    color: #fff;
+    background: var(--portal-grey-darker);
+    color: var(--portal-white);
     text-transform: uppercase;
     font-size: 14px;
 

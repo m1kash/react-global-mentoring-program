@@ -1,11 +1,12 @@
 import React from 'react';
 import {useUIDSeed} from 'react-uid';
 import classes from './item-list.css';
-import data from './test.json';
 import Item from '../Item';
+import {object} from 'prop-types';
 
-function ItemList () {
+function ItemList (props) {
     const seed = useUIDSeed();
+    const { data } = props;
 
     return (
         <div className={classes.root}>
@@ -19,6 +20,10 @@ function ItemList () {
             })}
         </div>
     )
+}
+
+ItemList.propTypes = {
+    data: object
 }
 
 export default ItemList;

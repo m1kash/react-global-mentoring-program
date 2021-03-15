@@ -2,6 +2,10 @@
 
 :root {
     --portal-red-color: #f65261;
+    --portal-white: #fff;
+    --portal-grey: #424242;
+    --portal-grey-darker: #232323;
+    --portal-grey-ligher: #555;
 }
 
 *,

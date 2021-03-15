@@ -1,0 +1,23 @@
+.root {
+    width: 100%;
+    color: var(--portal-white);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.root__subtitle {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.root__message {
+    width: 100%;
+    padding: 30px;
+    border: #b50012;
+    background: #ffcfd2;
+    color: #b50012;
+}
+
+

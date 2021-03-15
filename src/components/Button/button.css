@@ -4,7 +4,7 @@
     border-radius: 3px;
     box-shadow: none;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
@@ -23,7 +23,7 @@
 
 .root--secondary {
     background: var(--portal-red-color);
-    color: #fff;
+    color: var(--portal-white);
 }
 
 .root--secondary:hover {
@@ -32,8 +32,8 @@
 
 .root--grey {
     padding: 10px 30px;
-    background: #555;
-    color: #f65261;
+    background: var(--portal-grey-ligher);
+    color: var(--portal-red-color);
 }
 
 .root--grey:hover {

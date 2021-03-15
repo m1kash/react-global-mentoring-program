@@ -1,8 +1,9 @@
 import React from 'react';
 import classes from './counter.css';
 
-function Counter () {
-    const count = 39;
+function Counter (props) {
+    const {count} = props;
+
     return (
         <div className={classes.root}>
             <strong>

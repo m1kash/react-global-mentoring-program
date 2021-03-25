@@ -2,11 +2,13 @@ import React from 'react';
 import classes from './text-input.css';
 
 
-function TextInput (props) {
-    const { placeholder } = props;
+function TextInput ({ placeholder, onChange, id, value = ''}) {
+    const onChangeState = function (event) {
+      onChange(event.currentTarget.value);
+    };
 
     return (
-        <input placeholder={placeholder} className={classes.root} type="text"/>
+        <input placeholder={placeholder} onChange={onChangeState} id={id} value={value} className={classes.root} type="text"/>
     )
 }
 

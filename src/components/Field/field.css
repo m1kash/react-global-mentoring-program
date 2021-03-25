@@ -1,0 +1,17 @@
+.root {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.root:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.root__label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--portal-red-color);
+}

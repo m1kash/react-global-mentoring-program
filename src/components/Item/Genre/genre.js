@@ -1,11 +1,10 @@
 import React from 'react';
 import classes from './genre.css';
-import data from './test.json';
 import PropTypes from 'prop-types';
 
 function Genre (props) {
-    const { categories } = props;
-    const outputCategories = data.genres.reduce((result, genre) => {
+    const { categories, genresBase } = props;
+    const outputCategories = genresBase.reduce((result, genre) => {
         if (categories.indexOf(genre.id) !== -1) {
             result.push(genre.name);
 

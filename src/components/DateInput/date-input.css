@@ -1,0 +1,20 @@
+.root {
+    composes: root from '../TextInput/text-input.css';
+    background-image: url('./calendar.png');
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: calc(100% - 18px) 47%;
+}
+
+.root::-webkit-calendar-picker-indicator {
+    background-image: url('./calendar.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.root__datepicker {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    composes: root from '../TextInput/text-input.css';
+}

@@ -1,11 +1,11 @@
 .root {
-    padding: 22px 30px;
+    padding: 10px 15px;
     width: 100%;
     outline: none;
     border: 0;
     border-radius: 3px;
-    background: var(--portal-grey-darker);
-    color: var(--portal-grey-ligher);
+    background: #2e2e2e;
+    color: var(--portal-white);
     font-size: 18px;
 
     -webkit-appearance: none;

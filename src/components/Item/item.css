@@ -11,3 +11,11 @@
     margin-top: 10px;
     width: 100%;
 }
+
+.root .root__toggle {
+    opacity: 0;
+}
+
+.root:hover .root__toggle {
+    opacity: 1;
+}

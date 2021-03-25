@@ -2,6 +2,11 @@
     position: absolute;
     top: 10px;
     right: 10px;
+    opacity: 0;
+    transition: opacity .1s ease-in-out;
+}
+
+.root__button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,8 +14,6 @@
     height: 35px;
     border-radius: 50%;
     background: var(--portal-grey-darker);
-    opacity: 0;
-    transition: opacity .1s ease-in-out;
 }
 
 .root--visible {
@@ -22,4 +25,53 @@
     height: 20px;
 
     fill: var(--portal-white);
+}
+
+.root__list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    padding: 20px 0 10px;
+    background: var(--portal-grey-darker);
+    border-radius: 5px;
+    color: var(--portal-grey-ligher);
+}
+
+.root__list-item {
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+.root__list-item:hover {
+    background: var(--portal-red-color);
+    color: var(--portal-white);
+}
+
+.root__list--visible {
+    display: inline-block;
+}
+
+.root__close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    font-size: 0;
+    z-index: 10;
+    color: transparent;
+}
+
+.root__close:after {
+    content: 'X';
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    z-index: 10;
+    color: var(--portal-white);
 }

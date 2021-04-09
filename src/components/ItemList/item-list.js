@@ -4,18 +4,17 @@ import classes from './item-list.css';
 import Item from '../Item';
 import {object} from 'prop-types';
 
-function ItemList (props) {
+function ItemList ({ state }) {
     const seed = useUIDSeed();
-    const { data } = props;
 
     return (
         <div className={classes.root}>
-            {data.movies.map((movie) => {
+            {state.movies.map((movie) => {
                 if (!movie.name) {
                     return;
                 }
 
-                return <Item key={seed(movie)} image={movie.poster_path} date={movie.first_air_date} title={movie.name} genres={movie.genre_ids} />
+                return <Item key={seed(movie)} image={movie.poster_path} date={movie.first_air_date} title={movie.name} overview={movie.overview} genres={movie.genre_ids} genresAll={state.genres} />
 
             })}
         </div>

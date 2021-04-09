@@ -21,6 +21,17 @@
     border: 0;
 }
 
+.root--primary {
+    border: 1px solid var(--portal-red-color);
+    color: var(--portal-red-color);
+    background-color: transparent;
+}
+
+.root--primary:hover {
+    border: 1px solid var(--portal-white);
+    color: var(--portal-white);
+}
+
 .root--secondary {
     background: var(--portal-red-color);
     color: var(--portal-white);

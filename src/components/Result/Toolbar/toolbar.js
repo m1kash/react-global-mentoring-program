@@ -5,16 +5,14 @@ import Sorter from '../Sorter';
 import Counter from '../Counter';
 import {object} from 'prop-types';
 
-function Toolbar (props) {
-    const { data } = props;
-
+function Toolbar ({ state }) {
     return (
         <>
             <div className={classes.root}>
                 <Filter />
                 <Sorter />
             </div>
-            <Counter count={data.movies.length} />
+            <Counter count={state.movies.length} />
         </>
     );
 }

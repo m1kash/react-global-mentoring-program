@@ -9,7 +9,7 @@
     font-size: 18px;
 
     -webkit-appearance: none;
-            appearance: none;
+    appearance: none;
 }
 
 .root::-webkit-input-placeholder {
@@ -26,6 +26,7 @@
     /* Mozilla Firefox 19+ */
     color: var(--portal-grey-ligher);
 }
+
 .root:-ms-input-placeholder {
     /* Internet Explorer 10+ */
     color: var(--portal-grey-ligher);

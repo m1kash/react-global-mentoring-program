@@ -1,22 +1,20 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Button from '../Button';
-import AddMoviePopup from "../AddMoviePopup";
-import PopupContainer from "../PopupContainer";
+import AddMoviePopup from '../AddMoviePopup';
+import PopupContainer from '../PopupContainer';
+import useToggle from '../../hooks/useToggle';
 
 
-function AddMovie ({ state, setStateApp }) {
-    const [showPopup, setShowPopup ] = useState(false);
-    const togglePopup = function (e) {
-        setShowPopup(!showPopup);
-    };
+function AddMovie({state, setStateApp}) {
+    const [visible, togglePopupAction] = useToggle(false, true);
 
     return (
         <>
-            <Button type={'grey'} onClick={togglePopup}>
+            <Button type='grey' onClick={togglePopupAction}>
                 + Add Movie
             </Button>
-            {showPopup && <PopupContainer depend={showPopup}>
-                 <AddMoviePopup closeAction={togglePopup} stateApp={state} setStateApp={setStateApp} />
+            {visible && <PopupContainer depend={visible}>
+                <AddMoviePopup closeAction={togglePopupAction} stateApp={state} setStateApp={setStateApp}/>
             </PopupContainer>}
         </>
     );

@@ -1,1 +1,1 @@
-export { default } from './add-movie';
+export {default} from './add-movie';

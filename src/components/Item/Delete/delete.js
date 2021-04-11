@@ -1,12 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import PopupContainer from '../../PopupContainer';
 import DeleteMoviePopup from '../../DeleteMoviePopup';
+import useToggle from '../../../hooks/useToggle';
 
-function Delete () {
-    const [showPopup, setShowPopup] = useState(false);
-    const togglePopup = function () {
-        setShowPopup(!showPopup);
-    };
+function Delete() {
+    const [showPopup, togglePopup] = useToggle(false, true);
 
     return (
         <>

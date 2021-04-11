@@ -3,7 +3,7 @@ import classes from './button.css';
 import PropTypes from 'prop-types';
 
 
-function Button ({children, type, classNames, onClick}) {
+function Button({children, type, classNames, onClick}) {
     const classesButton = [
         classes.root,
         ...classNames

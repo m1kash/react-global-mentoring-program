@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './counter.css';
 
-function Counter (props) {
+function Counter(props) {
     const {count} = props;
 
     return (

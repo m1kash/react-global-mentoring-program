@@ -4,7 +4,7 @@ import classes from './item-list.css';
 import Item from '../Item';
 import {object} from 'prop-types';
 
-function ItemList ({ state }) {
+function ItemList({state, setStateApp}) {
     const seed = useUIDSeed();
 
     return (
@@ -14,7 +14,7 @@ function ItemList ({ state }) {
                     return;
                 }
 
-                return <Item key={seed(movie)} image={movie.poster_path} date={movie.first_air_date} title={movie.name} overview={movie.overview} genres={movie.genre_ids} genresAll={state.genres} />
+                return <Item key={seed(movie)} info={movie} genresAll={state.genres} state={state} setStateApp={setStateApp}/>
 
             })}
         </div>

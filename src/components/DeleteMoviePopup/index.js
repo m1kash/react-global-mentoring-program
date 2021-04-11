@@ -1,1 +1,1 @@
-export { default } from './delete-movie-popup';
+export {default} from './delete-movie-popup';

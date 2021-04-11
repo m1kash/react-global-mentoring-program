@@ -1,8 +1,8 @@
 import React from 'react';
-import { useUIDSeed } from 'react-uid';
+import {useUIDSeed} from 'react-uid';
 import classes from './filter.css';
 
-function Filter () {
+function Filter() {
     const items = [
         {
             name: 'All',
@@ -15,7 +15,7 @@ function Filter () {
         {
             name: 'Comedy',
             isActive: false
-        },        {
+        }, {
             name: 'Horror',
             isActive: false
         },

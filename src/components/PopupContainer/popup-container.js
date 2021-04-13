@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import classes from './popup-container.css';
 
 
-function PopupContainer ({ children, depend}) {
+function PopupContainer({children, depend}) {
     const container = useMemo(() => document.createElement('div'), []);
     container.classList.add(classes.root);
     const toggleScrollState = (el) => el.classList.toggle(classes['overflow-disable']);

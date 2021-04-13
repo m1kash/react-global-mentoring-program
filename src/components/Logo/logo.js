@@ -2,13 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import logoIMG from './logo.png';
 
-
-function Logo (props) {
-    const { link, nameSite, description, height, width} = props;
+function Logo( {
+    link,
+    onClick,
+    nameSite,
+    description,
+    height,
+    width
+}) {
 
     return (
-        <a href={link} title={` ${nameSite} - ${description}`}>
-            <img src={logoIMG} alt={nameSite} height={height} width={width} />
+        <a href={link} onClick={onClick} title={` ${nameSite} - ${description}`}>
+            <img src={logoIMG} alt={nameSite} height={height} width={width}/>
         </a>
     )
 }

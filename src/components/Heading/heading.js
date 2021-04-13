@@ -1,9 +1,9 @@
 import React from 'react';
 import classes from './heading.css';
-import {arrayOf, string, element, oneOfType} from 'prop-types';
+import {arrayOf, element, oneOfType, string} from 'prop-types';
 
-function Heading (props) {
-    const { children, type, classNames } = props;
+function Heading(props) {
+    const {children, type, classNames} = props;
     const HeadingType = `${type}`;
     const cssClasses = [
         classes.root,

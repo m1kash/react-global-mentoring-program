@@ -2,14 +2,17 @@ import React from 'react';
 import classes from './container.css';
 import PropTypes from 'prop-types';
 
-function Container (props) {
-    const { children, type } = props;
+function Container({children, type, wrap}) {
     const mergeClasses = [
         classes.root
     ];
 
     if (type === 'sp') {
         mergeClasses.push(classes['root--sp'])
+    }
+
+    if (wrap) {
+        mergeClasses.push(classes['root--wrap'])
     }
 
     return (

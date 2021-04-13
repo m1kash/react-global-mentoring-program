@@ -1,0 +1,23 @@
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    border: 2px solid var(--portal-grey);
+    color: darkgreen;
+    font-size: 30px;
+    border-radius: 100%;
+}
+
+.root--good {
+    color: yellowgreen;
+}
+
+.root--average {
+    color: yellow;
+}
+
+.root--bad {
+    color: red;
+}

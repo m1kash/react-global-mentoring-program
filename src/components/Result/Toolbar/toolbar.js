@@ -5,14 +5,14 @@ import Sorter from '../Sorter';
 import Counter from '../Counter';
 import {object} from 'prop-types';
 
-function Toolbar ({ state }) {
+function Toolbar({state}) {
     return (
         <>
             <div className={classes.root}>
-                <Filter />
-                <Sorter />
+                <Filter/>
+                <Sorter/>
             </div>
-            <Counter count={state.movies.length} />
+            <Counter count={state.movies.length}/>
         </>
     );
 }

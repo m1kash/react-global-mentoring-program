@@ -7,17 +7,18 @@ import Footer from '../Footer/footer';
 import Content from '../Content';
 import data from './test.json';
 
-function App () {
+function App() {
     const [stateApp, setStateApp] = useState({
         movies: data.movies,
-        genres: data.genres
+        genres: data.genres,
+        openMovieDialog: false,
     });
     return (
         <>
             <Header state={stateApp} setStateApp={setStateApp}/>
-            <Content state={stateApp} />
+            <Content state={stateApp} setStateApp={setStateApp}/>
             <Footer>
-                <Logo link={'#'} nameSite={'netflixRoulette'} description={'Better portal'} />
+                <Logo link='#' nameSite='netflixRoulette' description='Better portal'/>
             </Footer>
         </>
     )

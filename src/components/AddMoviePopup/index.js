@@ -1,1 +1,1 @@
-export { default } from './add-movie-popup';
+export {default} from './add-movie-popup';

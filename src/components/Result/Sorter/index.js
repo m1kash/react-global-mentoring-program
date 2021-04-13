@@ -1,1 +1,1 @@
-export { default } from './sorter';
+export {default} from './sorter';

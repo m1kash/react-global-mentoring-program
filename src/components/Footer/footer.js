@@ -3,7 +3,7 @@ import React from 'react';
 import classes from './footer.css';
 
 
-function Footer (props) {
+function Footer(props) {
     const {children} = props;
 
     return (

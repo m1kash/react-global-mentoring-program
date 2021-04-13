@@ -2,11 +2,15 @@
     position: relative;
     z-index: 10;
     display: flex;
-    flex-wrap: wrap;
     margin: 0 auto;
     max-width: 1090px;
+    width: 100%;
 }
 
 .root--sp {
     justify-content: space-between;
+}
+
+.root--wrap {
+    flex-wrap: wrap;
 }

@@ -1,1 +1,1 @@
-export { default } from './popup-container.js';
+export {default} from './popup-container.js';

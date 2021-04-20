@@ -1,0 +1,446 @@
+{
+  "movies": [
+    {
+      "backdrop_path": "/ta5oblpMlEcIPIS2YGcq9XEkWK2.jpg",
+      "first_air_date": "2016-01-25",
+      "genre_ids": [
+        80,
+        10765
+      ],
+      "id": 63174,
+      "name": "Lucifer",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Lucifer",
+      "overview": "Bored and unhappy as the Lord of Hell, Lucifer Morningstar abandoned his throne and retired to Los Angeles, where he has teamed up with LAPD detective Chloe Decker to take down criminals. But the longer he's away from the underworld, the greater the threat that the worst of humanity could escape.",
+      "popularity": 684.413,
+      "poster_path": "/4EYPN5mVIhKLfxGruy7Dy41dTVn.jpg",
+      "vote_average": 8.5,
+      "vote_count": 7836
+    },
+    {
+      "backdrop_path": "/mXouvrZbn8YpZMURGvw30QK8qfo.jpg",
+      "first_air_date": "2019-08-22",
+      "genre_ids": [
+        18,
+        10765
+      ],
+      "id": 89641,
+      "name": "Love Alarm",
+      "origin_country": [
+        "KR"
+      ],
+      "original_language": "ko",
+      "original_name": "좋아하면 울리는",
+      "overview": "Love Alarm is an app that tells you if someone within a 10-meter radius has a crush on you. It quickly becomes a social phenomenon. While everyone talks about it and uses it to test their love and popularity, Jojo is one of the few people who have yet to download the app. However, she soon faces a love triangle situation between Sun-oh whom she starts to have feelings for, and Hye-young, who has had a huge crush on her.",
+      "popularity": 894.132,
+      "poster_path": "/hQ8Hobo1RpYuZVQJQOCycNMHAG.jpg",
+      "vote_average": 8.5,
+      "vote_count": 1215
+    },
+    {
+      "backdrop_path": "/iU955nBcsc5Zr5e31eWU2xKVqHk.jpg",
+      "first_air_date": "2020-10-23",
+      "genre_ids": [
+        10759,
+        18
+      ],
+      "id": 93785,
+      "name": "Barbarians",
+      "origin_country": [
+        "DE"
+      ],
+      "original_language": "de",
+      "original_name": "Barbaren",
+      "overview": "Three people's fates are interwoven in the Battle of the Teutoburg Forest in 9 A.D., during which Germanic warriors halt the spread of the Roman Empire.",
+      "popularity": 368.463,
+      "poster_path": "/trfHliK2hhw2xOJVztHqKylyzrD.jpg",
+      "vote_average": 7.5,
+      "vote_count": 297
+    },
+    {
+      "backdrop_path": "/qJxzjUjCpTPvDHldNnlbRC4OqEh.jpg",
+      "first_air_date": "2019-02-15",
+      "genre_ids": [
+        10759,
+        10765,
+        18
+      ],
+      "id": 75006,
+      "name": "The Umbrella Academy",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The Umbrella Academy",
+      "overview": "A dysfunctional family of superheroes comes together to solve the mystery of their father's death, the threat of the apocalypse and more.",
+      "popularity": 320.021,
+      "poster_path": "/scZlQQYnDVlnpxFTxaIv2g0BWnL.jpg",
+      "vote_average": 8.8,
+      "vote_count": 6337
+    },
+    {
+      "backdrop_path": "/VYo9j4vMFVGkAHu6SU4vOpyGzl.jpg",
+      "first_air_date": "2018-10-26",
+      "genre_ids": [
+        9648,
+        10765,
+        18
+      ],
+      "id": 79242,
+      "name": "Chilling Adventures of Sabrina",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Chilling Adventures of Sabrina",
+      "overview": "As her 16th birthday nears, Sabrina must choose between the witch world of her family and the human world of her friends. Based on the Archie comic.",
+      "popularity": 302.702,
+      "poster_path": "/yxMpoHO0CXP5o9gB7IfsciilQS4.jpg",
+      "vote_average": 8.4,
+      "vote_count": 2418
+    },
+    {
+      "backdrop_path": "/epQEpsbNHrEe76oSI42TOwHKOLF.jpg",
+      "first_air_date": "2021-02-24",
+      "genre_ids": [
+        99,
+        10768
+      ],
+      "id": 93736,
+      "name": "Age of Samurai: Battle for Japan",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Age of Samurai: Battle for Japan",
+      "overview": "Dynamic reenactments and expert commentaries bring to life the tumultuous history and power struggles of a warring 16th-century feudal Japan.",
+      "popularity": 248.153,
+      "poster_path": "/wIKQRtc2kKiBmBnkOjjvMqIDfah.jpg",
+      "vote_average": 7.4,
+      "vote_count": 55
+    },
+    {
+      "backdrop_path": "/1qOA3kMtQO8bjnW8M2smjA8tp10.jpg",
+      "first_air_date": "2018-10-05",
+      "genre_ids": [
+        80,
+        9648,
+        18
+      ],
+      "id": 76669,
+      "name": "Elite",
+      "origin_country": [
+        "ES"
+      ],
+      "original_language": "es",
+      "original_name": "Élite",
+      "overview": "When three working class kids enroll in the most exclusive school in Spain, the clash between the wealthy and the poor students leads to tragedy.",
+      "popularity": 225.655,
+      "poster_path": "/3NTAbAiao4JLzFQw6YxP1YZppM8.jpg",
+      "vote_average": 8.2,
+      "vote_count": 6071
+    },
+    {
+      "backdrop_path": "/pwyMoXQbqJdmpjjl23KaaQLOv6S.jpg",
+      "first_air_date": "2021-01-22",
+      "genre_ids": [
+        10765,
+        18
+      ],
+      "id": 97175,
+      "name": "Fate: The Winx Saga",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Fate: The Winx Saga",
+      "overview": "The coming-of-age journey of five fairies attending Alfea, a magical boarding school in the Otherworld where they must learn to master their powers while navigating love, rivalries, and the monsters that threaten their very existence.",
+      "popularity": 239.867,
+      "poster_path": "/oHj6guMrLfQcBzo3uxwBJc8Y736.jpg",
+      "vote_average": 8.5,
+      "vote_count": 584
+    },
+    {
+      "backdrop_path": "/dVHeJXUzHJJGadB2wvpuAn6fsdN.jpg",
+      "first_air_date": "2021-01-08",
+      "genre_ids": [
+        80,
+        18,
+        9648
+      ],
+      "id": 96677,
+      "name": "Lupin",
+      "origin_country": [
+        "FR"
+      ],
+      "original_language": "fr",
+      "original_name": "Lupin",
+      "overview": "Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop sets out to avenge his father for an injustice inflicted by a wealthy family.",
+      "popularity": 236.299,
+      "poster_path": "/sgxawbFB5Vi5OkPWQLNfl3dvkNJ.jpg",
+      "vote_average": 7.9,
+      "vote_count": 655
+    },
+    {
+      "backdrop_path": "/eAZtz2ydxBaHtJw3J42Gdy2DSpc.jpg",
+      "first_air_date": "2021-01-20",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 115857,
+      "name": "Daughter From Another Mother",
+      "origin_country": [
+        "MX"
+      ],
+      "original_language": "es",
+      "original_name": "Madre solo hay dos",
+      "overview": "After realizing their babies were exchanged at birth, two women develop a plan to adjust to their new lives: creating a single —and peculiar— family.",
+      "popularity": 224.59,
+      "poster_path": "/6chvnAakKI2cYW69ODBHZHm8clb.jpg",
+      "vote_average": 7.5,
+      "vote_count": 664
+    },
+    {
+      "backdrop_path": "/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
+      "first_air_date": "2016-07-15",
+      "genre_ids": [
+        10765,
+        9648,
+        18
+      ],
+      "id": 66732,
+      "name": "Stranger Things",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Stranger Things",
+      "overview": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.",
+      "popularity": 227.324,
+      "poster_path": "/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg",
+      "vote_average": 8.6,
+      "vote_count": 7769
+    },
+    {
+      "backdrop_path": "/w99Pk4pJSieveKIIc7KGXtsFT3U.jpg",
+      "first_air_date": "2021-02-17",
+      "genre_ids": [
+        18
+      ],
+      "id": 97173,
+      "name": "Behind Her Eyes",
+      "origin_country": [
+        "GB"
+      ],
+      "original_language": "en",
+      "original_name": "Behind Her Eyes",
+      "overview": "A single mother enters a world of twisted mind games when she begins an affair with her psychiatrist boss while secretly befriending his mysterious wife.",
+      "popularity": 211.937,
+      "poster_path": "/sfd90NIf778KoBFmpdBTow4xTm7.jpg",
+      "vote_average": 7.6,
+      "vote_count": 123
+    },
+    {
+      "backdrop_path": "/61m8HGEWwE4q8oSz3AY5vl5F3BS.jpg",
+      "first_air_date": "2019-01-11",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 81356,
+      "name": "Sex Education",
+      "origin_country": [
+        "GB"
+      ],
+      "original_language": "en",
+      "original_name": "Sex Education",
+      "overview": "Inexperienced Otis channels his sex therapist mom when he teams up with rebellious Maeve to set up an underground sex therapy clinic at school.",
+      "popularity": 191.624,
+      "poster_path": "/4Bph0hhnDH6dpc0SZIV522bLm4P.jpg",
+      "vote_average": 8.3,
+      "vote_count": 3509
+    },
+    {
+      "backdrop_path": "/xGexTKCJDkl12dTW4YCBDXWb1AD.jpg",
+      "first_air_date": "2017-05-02",
+      "genre_ids": [
+        80,
+        18
+      ],
+      "id": 71446,
+      "name": "Money Heist",
+      "origin_country": [
+        "ES"
+      ],
+      "original_language": "es",
+      "original_name": "La casa de papel",
+      "overview": "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose. Five months of seclusion - memorizing every step, every detail, every probability - culminate in eleven days locked up in the National Coinage and Stamp Factory of Spain, surrounded by police forces and with dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
+      "popularity": 201.296,
+      "poster_path": "/MoEKaPFHABtA1xKoOteirGaHl1.jpg",
+      "vote_average": 8.3,
+      "vote_count": 12434
+    },
+    {
+      "backdrop_path": "/34OGjFEbHj0E3lE2w0iTUVq0CBz.jpg",
+      "first_air_date": "2020-10-23",
+      "genre_ids": [
+        18
+      ],
+      "id": 87739,
+      "name": "The Queen's Gambit",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The Queen's Gambit",
+      "overview": "In a Kentucky orphanage in the 1950s, a young girl discovers an astonishing talent for chess while struggling with addiction.",
+      "popularity": 170.903,
+      "poster_path": "/zU0htwkhNvBQdVSIKB9s6hgVeFK.jpg",
+      "vote_average": 8.7,
+      "vote_count": 1657
+    },
+    {
+      "backdrop_path": "/m7FqiUOvsSk7Ulg2oRMfFGcLeT9.jpg",
+      "first_air_date": "2020-12-25",
+      "genre_ids": [
+        18
+      ],
+      "id": 91239,
+      "name": "Bridgerton",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Bridgerton",
+      "overview": "Wealth, lust, and betrayal set in the backdrop of Regency era England, seen through the eyes of the powerful Bridgerton family.",
+      "popularity": 169.325,
+      "poster_path": "/qaewZKBKmXjb4ZfFBb1LCug6BE8.jpg",
+      "vote_average": 8.3,
+      "vote_count": 949
+    },
+    {
+      "backdrop_path": "/3jDXL4Xvj3AzDOF6UH1xeyHW8MH.jpg",
+      "first_air_date": "2017-12-01",
+      "genre_ids": [
+        10765,
+        18,
+        9648,
+        80
+      ],
+      "id": 70523,
+      "name": "Dark",
+      "origin_country": [
+        "DE"
+      ],
+      "original_language": "de",
+      "original_name": "Dark",
+      "overview": "A missing child causes four families to help each other for answers. What they could not imagine is that this mystery would be connected to innumerable other secrets of the small town.",
+      "popularity": 167.369,
+      "poster_path": "/apbrbWs8M9lyOpJYU5WXrpFbk1Z.jpg",
+      "vote_average": 8.4,
+      "vote_count": 4082
+    },
+    {
+      "backdrop_path": "/vmVeGFUTXEKwAUpFH9bZwow9zIk.jpg",
+      "first_air_date": "2020-07-15",
+      "genre_ids": [
+        9648,
+        18
+      ],
+      "id": 105214,
+      "name": "Dark Desire",
+      "origin_country": [
+        "MX"
+      ],
+      "original_language": "es",
+      "original_name": "Oscuro deseo",
+      "overview": "Married Alma spends a fateful weekend away from home that ignites passion, ends in tragedy and leads her to question the truth about those close to her.",
+      "popularity": 143.447,
+      "poster_path": "/uxFNAo2A6ZRcgNASLk02hJUbybn.jpg",
+      "vote_average": 7.3,
+      "vote_count": 3346
+    }
+  ],
+  "genres": [
+    {
+      "id": 28,
+      "name": "Action"
+    },
+    {
+      "id": 12,
+      "name": "Adventure"
+    },
+    {
+      "id": 16,
+      "name": "Animation"
+    },
+    {
+      "id": 35,
+      "name": "Comedy"
+    },
+    {
+      "id": 80,
+      "name": "Crime"
+    },
+    {
+      "id": 99,
+      "name": "Documentary"
+    },
+    {
+      "id": 18,
+      "name": "Drama"
+    },
+    {
+      "id": 10751,
+      "name": "Family"
+    },
+    {
+      "id": 14,
+      "name": "Fantasy"
+    },
+    {
+      "id": 36,
+      "name": "History"
+    },
+    {
+      "id": 27,
+      "name": "Horror"
+    },
+    {
+      "id": 10402,
+      "name": "Music"
+    },
+    {
+      "id": 9648,
+      "name": "Mystery"
+    },
+    {
+      "id": 10749,
+      "name": "Romance"
+    },
+    {
+      "id": 878,
+      "name": "Science Fiction"
+    },
+    {
+      "id": 10770,
+      "name": "TV Movie"
+    },
+    {
+      "id": 53,
+      "name": "Thriller"
+    },
+    {
+      "id": 10752,
+      "name": "War"
+    },
+    {
+      "id": 37,
+      "name": "Western"
+    }
+  ]
+}

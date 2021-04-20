@@ -1,11 +1,9 @@
 const DEFAULT_VALUE_FORM = {
-    'name': '',
-    'first_air_date': '',
-    'movie_url': '',
-    'genre_ids': {
-        'options': [],
-        'values': []
-    },
+    'title': '',
+    'tagline': '',
+    'release_date': '',
+    'poster_path': '',
+    'genres': [],
     'overview': '',
     'runtime': ''
 };

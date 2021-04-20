@@ -16,6 +16,14 @@
     justify-content: space-between;
 }
 
+.root__toggle {
+    display: flex;
+}
+
+.root__toggle-item {
+    display: flex;
+}
+
 .root__button {
     margin-left: 20px;
 }

@@ -5,7 +5,7 @@ import PopupContainer from '../PopupContainer';
 import useToggle from '../../hooks/useToggle';
 
 
-function AddMovie({state, setStateApp}) {
+function AddMovie() {
     const [visible, togglePopupAction] = useToggle(false, true);
 
     return (
@@ -14,7 +14,7 @@ function AddMovie({state, setStateApp}) {
                 + Add Movie
             </Button>
             {visible && <PopupContainer depend={visible}>
-                <AddMoviePopup closeAction={togglePopupAction} stateApp={state} setStateApp={setStateApp}/>
+                <AddMoviePopup closeAction={togglePopupAction}/>
             </PopupContainer>}
         </>
     );

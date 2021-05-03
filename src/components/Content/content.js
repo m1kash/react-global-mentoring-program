@@ -3,12 +3,11 @@ import classes from './content.css';
 import Container from '../Container/container';
 import Result from '../Result';
 
-function Content({state, setStateApp}) {
-    const setStateAppCallback = useCallback(setStateApp);
+function Content() {
     return (
         <main className={classes.root}>
             <Container wrap={true}>
-                <Result state={state} setStateApp={setStateAppCallback}/>
+                <Result />
             </Container>
         </main>
     )

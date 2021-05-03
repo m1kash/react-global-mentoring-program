@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import classes from './movie-details.css';
 import ReactDOM from 'react-dom';
 import Image from '../Item/Image/image';
@@ -7,22 +7,24 @@ import DateComponent from '../Item/Date';
 import Container from '../Container';
 import Rating from '../Rating';
 import Logo from '../Logo';
+import {connect, useDispatch} from 'react-redux';
+import {loadMovieDetailsRequest} from '../../actions/api';
+import {loadMovieDetails} from '../../actions/actionLoadMovieDetails';
 
 function MovieDetails ( {
                             visible,
                             hideVisible,
-                            title,
-                            image,
                             id,
-                            date,
-                            additionInfo = 'lorem lorem impusum',
-                            duration,
-                            rate,
-                            description,
-                            children,
-                            state,
-                            setStateApp
+    movie
 }) {
+    const dispatch = useDispatch();
+    const setDetails = (result) => {
+        dispatch(loadMovieDetails(result));
+    }
+    useEffect(function (  ) {
+        loadMovieDetailsRequest(`movies/${id}`, {}, setDetails);
+    }, [])
+
     return (
         <>
             {
@@ -34,23 +36,23 @@ function MovieDetails ( {
                                     <Logo link='#' onClick={hideVisible} nameSite='netflixRoulette' description='Better portal'/>
                                 </div>
                                 <div className={classes.root__image} onClick={hideVisible}>
-                                    <Image height={280} width={200} image={image} />
+                                    <Image height={280} width={200} image={movie.poster_path} />
                                 </div>
                                 <div className={classes.root__content}>
                                     <div className={classes['root__top-line']}>
-                                        <Title classesCss={[classes['root__title']]} title={title} type='h1' />
+                                        <Title classesCss={[classes['root__title']]} title={movie.title} type='h1' />
                                         <div className={classes.root__rating}>
-                                            <Rating rate={rate} />
+                                            <Rating rate={movie.vote_average} />
                                         </div>
                                     </div>
                                     <div className={classes['root__addition-info']}>
-                                        {additionInfo}
+                                        {movie.tagline}
                                     </div>
                                     <div className={classes['root__bottom-line']}>
-                                        <DateComponent date={date}/>
-                                        <span>{duration}</span>
+                                        <DateComponent date={movie.release_date}/>
+                                        <span className={classes.root__duration}>{movie.runtime} min</span>
                                     </div>
-                                    <p className={classes['root__description']}>{description}</p>
+                                    <p className={classes['root__description']}>{movie.overview}</p>
                                 </div>
                                 <a href='#' onClick={hideVisible} className={classes['root__search']}>
                                     <svg version="1.1" id="Capa_1"  x="0px" y="0px"
@@ -74,4 +76,11 @@ function MovieDetails ( {
     )
 }
 
-export default MovieDetails;
+function mapStateToProps(store) {
+    const {movieDetails} = store;
+    return {
+        movie: movieDetails
+    }
+}
+
+export default connect(mapStateToProps)(MovieDetails);

@@ -4,15 +4,17 @@ import Filter from '../Filter';
 import Sorter from '../Sorter';
 import Counter from '../Counter';
 import {object} from 'prop-types';
+import {connect} from 'react-redux';
 
-function Toolbar({state}) {
+function Toolbar({ count }) {
+
     return (
         <>
             <div className={classes.root}>
                 <Filter/>
                 <Sorter/>
             </div>
-            <Counter count={state.movies.length}/>
+            <Counter count={count}/>
         </>
     );
 }
@@ -21,4 +23,12 @@ Toolbar.propTypes = {
     data: object
 }
 
-export default Toolbar;
+function mapStateToProps (store) {
+    const {movies} = store;
+
+    return {
+        count: movies.length
+    }
+}
+
+export default connect(mapStateToProps)(Toolbar);

@@ -1,12 +1,27 @@
 import React from 'react';
 import Popup from '../Popup';
+import {removeMovie} from '../../actions/actionRemoveMovie'
+import {useDispatch} from 'react-redux';
+import {loadMovies, removeMovieRequest} from '../../actions/api';
+import {actionLoadMovies} from '../../actions/actionLoadMovies';
+import {connect} from 'react-redux';
 
-function DeleteMoviePopup(props) {
+function DeleteMoviePopup({
+    id,
+    app,
+    ...props
+}) {
+    const dispatch = useDispatch();
+    const setMovies = result => dispatch(actionLoadMovies(result));
     const buttons = [
         {
             name: 'Confirm',
             type: 'secondary',
             onClick: () => {
+                dispatch(removeMovie(id));
+                removeMovieRequest(dispatch, `movies/${id}`).then(() => {
+                    loadMovies( 'movies', setMovies, app)
+                });
             }
         }
     ];
@@ -20,4 +35,12 @@ function DeleteMoviePopup(props) {
     );
 }
 
-export default DeleteMoviePopup;
+function mapStateToProps (store) {
+    const {app} = store;
+
+    return {
+        app
+    }
+}
+
+export default connect(mapStateToProps)(DeleteMoviePopup);

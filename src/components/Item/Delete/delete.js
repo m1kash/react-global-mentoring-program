@@ -3,14 +3,14 @@ import PopupContainer from '../../PopupContainer';
 import DeleteMoviePopup from '../../DeleteMoviePopup';
 import useToggle from '../../../hooks/useToggle';
 
-function Delete() {
+function Delete({id}) {
     const [showPopup, togglePopup] = useToggle(false, true);
 
     return (
         <>
             <span onClick={togglePopup}>Delete</span>
             {showPopup && <PopupContainer depend={showPopup}>
-                <DeleteMoviePopup title='Delete movie' closeAction={togglePopup}/>
+                <DeleteMoviePopup id={id} title='Delete movie' closeAction={togglePopup}/>
             </PopupContainer>}
         </>
     );

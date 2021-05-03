@@ -3,14 +3,12 @@ import classes from './image.css';
 import PropTypes from 'prop-types';
 
 function Image({image, altText, width, height} ) {
-    const resultImage = 'https://image.tmdb.org/t/p/original/' + image;
-
     return (
         <>
             <picture>
                 <img
                     className={classes.img}
-                    src={resultImage}
+                    src={image}
                     alt={altText}
                     height={height}
                     width={width}

@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import classes from './multi-select.css';
 import {useUIDSeed} from 'react-uid';
+import PropTypes from 'prop-types';
 
-function MultiSelect({name, id, value = [], options = [], onChange}) {
+function MultiSelect({name, id, value, options, onChange}) {
     const seed = useUIDSeed();
     const classesButton = [classes.root__button];
     const [state, setState] = useState({
@@ -15,20 +16,17 @@ function MultiSelect({name, id, value = [], options = [], onChange}) {
         })
     };
     const changeStateOption = function (option) {
-        const newValue = option.id;
+        const newValue = option;
         let newValues = value;
 
-        if (value.includes(option.id)) {
+        if (value.includes(option)) {
             newValues = value.filter(oldValue => oldValue !== newValue)
         } else {
-            newValues.push(option.id);
+            newValues.push(option);
         }
-        onChange({
-            options: options,
-            values: newValues,
-        });
+        onChange(newValues);
     };
-    const isSelectedOption = option => value.includes(option.id);
+    const isSelectedOption = option => value.includes(option);
 
     if (state.open) {
         classesButton.push(classes['root__button--open']);
@@ -38,13 +36,13 @@ function MultiSelect({name, id, value = [], options = [], onChange}) {
         <div className={classes.root} id={id}>
             {value.length > 0 ?
                 <div className={classes.root__chips} onClick={openDropdown}>
-                    {options.map((option) => {
+                    {value.map((option) => {
                         if (isSelectedOption(option)) {
                             return (
                                 <li key={seed(option)} className={classes['root__chips-item']}>
-                                <span className={classes['root__chips-text']}>
-                                    {option.name}
-                                </span>
+                                    <span className={classes['root__chips-text']}>
+                                        {option}
+                                    </span>
                                 </li>
                             )
                         }
@@ -57,11 +55,11 @@ function MultiSelect({name, id, value = [], options = [], onChange}) {
                 {options.map((option) => {
                     return (
                         <li key={seed(option)} className={classes['root__list-item']}>
-                            <input id={option.name + option.id} type="checkbox" checked={isSelectedOption(option)}
+                            <input id={option + seed(option)} type="checkbox" checked={isSelectedOption(option)}
                                    className={classes['root__checkbox']}
                                    onChange={changeStateOption.bind(null, option)}/>
-                            <label htmlFor={option.name + option.id} className={classes['root__list-text']}>
-                                {option.name}
+                            <label htmlFor={option + seed(option)} className={classes['root__list-text']}>
+                                {option}
                             </label>
                         </li>
                     )
@@ -72,6 +70,10 @@ function MultiSelect({name, id, value = [], options = [], onChange}) {
             </button>
         </div>
     )
+}
+
+MultiSelect.defaultProps = {
+    value: []
 }
 
 export default MultiSelect;

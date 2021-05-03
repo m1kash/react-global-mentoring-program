@@ -3,12 +3,12 @@ import Toolbar from './Toolbar';
 import ItemList from '../ItemList';
 import ErrorBoundary from '../ErrorBoundary';
 
-function Result({state, setStateApp}) {
+function Result() {
     return (
         <>
             <ErrorBoundary>
-                <Toolbar state={state}/>
-                <ItemList state={state} setStateApp={setStateApp}/>
+                <Toolbar />
+                <ItemList/>
             </ErrorBoundary>
         </>
     )

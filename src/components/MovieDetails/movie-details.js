@@ -12,9 +12,9 @@ import {loadMovieDetailsRequest} from '../../actions/api';
 import {loadMovieDetails} from '../../actions/actionLoadMovieDetails';
 
 function MovieDetails ( {
-                            visible,
-                            hideVisible,
-                            id,
+    visible,
+    hideVisible,
+    id,
     movie
 }) {
     const dispatch = useDispatch();

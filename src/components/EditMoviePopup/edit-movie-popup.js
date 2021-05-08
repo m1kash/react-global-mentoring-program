@@ -1,37 +1,44 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import Popup from '../Popup';
-import Field from '../Field';
+import FormWrap from '../Form';
 import {connect, useDispatch} from 'react-redux';
-import {editMovieRequest, loadMovieDetailsRequest, loadMovies} from '../../actions/api';
-import {setForm} from '../../actions/actionSetForm';
-import {isEmpty, isEqual} from 'lodash';
+import { editMovieRequest, loadMovieDetailsRequest, loadMovies} from '../../actions/api';
+import {isEmpty} from 'lodash';
 import {actionLoadMovies} from '../../actions/actionLoadMovies';
-
+import DEFAULT_PROPS_FORM from '../../constants/default-props-form';
+import {validationScheme} from '../../validation-scheme';
 
 function EditMoviePopup({
     title,
     closeAction,
     id,
-    formValues,
     app,
     genresBase
 }) {
     const dispatch = useDispatch();
-    const setDefaultStateForm = (result) => {
-        dispatch(setForm(result));
-    };
+    const formRef = useRef();
+    const [defaultValueForm, setDefaultValueForm] = useState();
     useEffect(() => {
-        loadMovieDetailsRequest(`movies/${id}`, {}, setDefaultStateForm);
-    }, []);
-    const submitForm = function () {
-        editMovieRequest(`movies`, formValues).then(function (  ) {
-            const setMovies = result => dispatch(actionLoadMovies(result));
+        loadMovieDetailsRequest(`movies/${id}`, {}, setDefaultValueForm);
 
-            loadMovies( 'movies', setMovies, app);
-        });
-    };
+        return () => {};
+    }, []);
     const resetForm = function () {
-        dispatch(setForm(formValues));
+        const {resetForm} = formRef.current;
+
+        resetForm();
+    };
+    const submitForm = function (e) {
+        const {submitForm} = formRef.current;
+
+        e.preventDefault();
+        submitForm().then(() => {
+            const {isValid} = formRef.current;
+
+            if (isValid) {
+                closeAction(e);
+            }
+        });
     };
     const buttons = [
         {
@@ -45,19 +52,28 @@ function EditMoviePopup({
             onClick: submitForm
         }
     ];
+    const onSubmitForm = function (values) {
+        editMovieRequest(`movies`, values).then(function (  ) {
+            const setMovies = result => dispatch(actionLoadMovies(result));
 
-    if (isEmpty(formValues)) {
+            loadMovies( 'movies', setMovies, app);
+        });
+    }
+
+    if (isEmpty(defaultValueForm)) {
         return null;
     }
 
     return (
         <Popup title={title} buttons={buttons} closeAction={closeAction}>
-            <Field id='title' name='Title' placeholder='Title'/>
-            <Field id='release_date' name='Release date' type='date' placeholder='Select date' />
-            <Field id='poster_path' name='Movie url' placeholder='Movie URL here' />
-            <Field id='genres' name='Genre' placeholder='Select Genre' type='multiselect' options={genresBase} />
-            <Field id='overview' name='Overview' placeholder='Overview here' />
-            <Field id='runtime' name='Runtime' type='number' placeholder='Runtime here' />
+            <FormWrap
+                genresBase={genresBase}
+                defaultValueForm={defaultValueForm}
+                defaultProps={DEFAULT_PROPS_FORM}
+                validationScheme={validationScheme}
+                formRef={formRef}
+                onSubmitForm={onSubmitForm}
+            />
         </Popup>
     );
 }
@@ -66,7 +82,6 @@ function mapStateToProps (store) {
     const {form, genres, app} = store;
 
     return {
-        formValues: form,
         genresBase: genres,
         app
     }

@@ -4,6 +4,12 @@
     flex-direction: column;
 }
 
+.root__error {
+    margin-top: 4px;
+    font-size: 14px;
+    color: var(--portal-red-color);
+}
+
 .root:not(:last-child) {
     margin-bottom: 20px;
 }

@@ -1,6 +1,7 @@
 import * as types from '../constants/actions';
 const initialState = {
     sortBy: '',
+    limit: 21,
     sortOrder: 'desc',
     filter: '',
     searchBy: 'title',

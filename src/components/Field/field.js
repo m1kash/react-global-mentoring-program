@@ -4,29 +4,31 @@ import TextInput from '../TextInput';
 import DateInput from '../DateInput';
 import MultiSelect from '../MultiSelect';
 import {connect, useDispatch} from 'react-redux';
-import {setForm} from '../../actions/actionSetForm';
 
-function Field({name, id, type = 'text', placeholder, options = [], formValues}) {
-    let value;
-    const dispatch = useDispatch();
-    const onChange = function (value) {
-        let finalValue = value;
-        if (type === 'number') {
-            finalValue = +value;
-        }
-        dispatch(setForm({
-            [id]: finalValue
-        }));
+function Field({name, id, type = 'text', placeholder, options = [], value, error, isTouch, onChange, onBlur}) {
+    const props = {
+        name,
+        id,
+        value,
+        options,
+        placeholder,
+        onChange,
+        onBlur,
+        isTouch
     };
-    if (typeof formValues[id] !== 'undefined') {
-        value = formValues[id];
+
+    if (isTouch) {
+        props['error'] = error;
     }
+
     const typesControls = {
-        text: <TextInput id={id} placeholder={placeholder} value={value} onChange={onChange}/>,
-        number: <TextInput id={id} placeholder={placeholder} value={value} onChange={onChange}/>,
-        date: <DateInput id={id} placeholder={placeholder} value={value} onChange={onChange}/>,
-        multiselect: <MultiSelect id={id} name={name} value={value} options={options} onChange={onChange}/>
+        text: <TextInput {...props}/>,
+        number: <TextInput {...props} type='number' />,
+        date: <DateInput  {...props}/>,
+        multiselect: <MultiSelect {...props}/>
     };
+
+
 
     return (
         <div className={classes.root}>
@@ -34,6 +36,10 @@ function Field({name, id, type = 'text', placeholder, options = [], formValues})
                 {name}
             </label>
             {typesControls[type]}
+            {isTouch && error &&
+            <div className={classes['root__error']}>
+                {error}
+            </div>}
         </div>
     );
 }

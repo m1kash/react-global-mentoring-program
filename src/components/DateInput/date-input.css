@@ -6,6 +6,8 @@
     background-position: calc(100% - 18px) 47%;
 }
 
+
+
 .root::-webkit-calendar-picker-indicator {
     background-image: url('./calendar.png');
     background-repeat: no-repeat;

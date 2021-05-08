@@ -1,18 +1,19 @@
-import {actionLoadMovies} from './actionLoadMovies';
+import {URL_BASE} from '../constants/app';
 
 export function loadMovies(endpoint, callback, params) {
-    return fetch(getUrl('http://localhost:4000/', endpoint, {limit: 21, ...params}))
+    return fetch(getUrl(URL_BASE, endpoint, params))
         .then(response => response.json())
         .then(callback)
 }
 
 export function loadMovieDetailsRequest(endpoint, params, callback) {
-    fetch(getUrl('http://localhost:4000/', endpoint, params)).then(response => response.json())
+    return fetch(getUrl(URL_BASE, endpoint, params))
+        .then(response => response.json())
         .then(callback)
 }
 
 export function createMovieRequest(endpoint, data, callback = function () {}) {
-    return fetch(getUrl('http://localhost:4000/', endpoint),{
+    return fetch(getUrl(URL_BASE, endpoint),{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -22,7 +23,7 @@ export function createMovieRequest(endpoint, data, callback = function () {}) {
 }
 
 export function editMovieRequest(endpoint, data, callback = function () {}) {
-    return fetch(getUrl('http://localhost:4000/', endpoint),{
+    return fetch(getUrl(URL_BASE, endpoint),{
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
@@ -32,7 +33,7 @@ export function editMovieRequest(endpoint, data, callback = function () {}) {
 }
 
 export function removeMovieRequest(dispatch, endpoint, params) {
-    return fetch(getUrl('http://localhost:4000/', endpoint, params),{
+    return fetch(getUrl(URL_BASE, endpoint, params),{
         method: 'DELETE'
     });
 }

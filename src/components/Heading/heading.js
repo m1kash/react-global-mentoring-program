@@ -3,7 +3,7 @@ import classes from './heading.css';
 import {arrayOf, element, oneOfType, string} from 'prop-types';
 
 function Heading(props) {
-    const {children, type, classNames} = props;
+    const {children, type, classNames = []} = props;
     const HeadingType = `${type}`;
     const cssClasses = [
         classes.root,

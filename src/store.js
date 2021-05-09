@@ -1,5 +1,4 @@
-import { createStore, combineReducers, compose} from 'redux';
-import data from './test.json';
+import { createStore, compose} from 'redux';
 import reducers from './reducers';
 /* eslint-disable no-underscore-dangle */
 const composeEnhancers =
@@ -8,8 +7,7 @@ const composeEnhancers =
         window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({}) : compose;
 /* eslint-enable */
 const initialState = {
-    movies: data.movies,
-
+    movies: [],
 };
 const configureStore = preloadState => (
    createStore(reducers, preloadState, composeEnhancers())

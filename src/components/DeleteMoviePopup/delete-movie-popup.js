@@ -1,10 +1,8 @@
 import React from 'react';
+import {connect, useDispatch} from 'react-redux';
 import Popup from '../Popup';
-import {removeMovie} from '../../actions/actionRemoveMovie'
-import {useDispatch} from 'react-redux';
+import {actionLoadMovies, removeMovie} from '../../actions/movie'
 import {loadMovies, removeMovieRequest} from '../../actions/api';
-import {actionLoadMovies} from '../../actions/actionLoadMovies';
-import {connect} from 'react-redux';
 
 function DeleteMoviePopup({
     id,

@@ -1,31 +1,24 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {useUIDSeed} from 'react-uid';
 import classes from './item-list.css';
 import Item from '../Item';
 import {object} from 'prop-types';
-import {connect, useDispatch} from 'react-redux';
-import {loadMovies} from '../../actions/api';
-import {actionLoadMovies} from '../../actions/actionLoadMovies';
+import {connect} from 'react-redux';
+import Heading from '../Heading';
 
-function ItemList({movies, app}) {
+function ItemList({movies}) {
     const seed = useUIDSeed();
-    const dispatch = useDispatch();
-    const setMovies = result => dispatch(actionLoadMovies(result));
-    useEffect(function (  ) {
-        loadMovies( 'movies', setMovies, app);
-    }, [])
-
 
     return (
         <div className={classes.root}>
-            {movies.map((movie) => {
+            {movies.length > 0 ? movies.map((movie) => {
                 if (!movie.title) {
                     return;
                 }
 
                 return <Item key={seed(movie)} info={movie} />
 
-            })}
+            }):<Heading type='h2' classNames={[classes['root__404']]}>No movies found</Heading>}
         </div>
     )
 }
@@ -35,9 +28,9 @@ ItemList.propTypes = {
 }
 
 function mapStateToProps(state) {
-    const { movies, app } = state;
+    const { movies } = state;
 
-    return { movies, app };
+    return { movies };
 }
 
 export default connect(mapStateToProps)(ItemList);

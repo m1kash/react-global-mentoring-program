@@ -1,20 +1,30 @@
 import React, {useEffect, useState} from 'react';
-import Heading from '../Heading/heading';
+import {useDispatch} from 'react-redux';
+import {useHistory, useParams} from 'react-router';
 import classes from './search.css';
+import Heading from '../Heading';
 import Button from '../Button';
 import TextInput from '../TextInput';
-import {useDispatch} from 'react-redux';
-import {setSearch} from '../../actions/actionSetSearch';
+import {setSearch} from '../../actions/app';
 
 function Search() {
     const [searchValue, setSearchValue] = useState();
+    const { phrase } = useParams();
+    const history = useHistory();
+    useEffect(function () {
+        setParam(phrase);
+    }, [phrase])
+    const goSearch = (value) => history.push(value ? `/search/${value}` : '/');
     const dispatch = useDispatch();
-    const onChange = (value) => {
+    const onChange = (e) => setParam(e.currentTarget.value);
+    const setParam = (value = '') => {
+        goSearch(value);
         setSearchValue(value);
         dispatch(setSearch({
-           search: value
+            search: value
         }))
     };
+
     return (
         <div className={classes.root}>
             <Heading classNames={[classes.root__heading]} type='h2'>Find your movie</Heading>

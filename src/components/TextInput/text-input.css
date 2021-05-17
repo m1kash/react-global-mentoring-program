@@ -12,6 +12,10 @@
     appearance: none;
 }
 
+.root--error {
+    border: 1px solid var(--portal-red-color);
+}
+
 .root::-webkit-input-placeholder {
     /* WebKit browsers */
     color: var(--portal-grey-ligher);

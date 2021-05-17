@@ -3,12 +3,20 @@ import classes from './multi-select.css';
 import {useUIDSeed} from 'react-uid';
 import PropTypes from 'prop-types';
 
-function MultiSelect({name, id, value, options, onChange}) {
+function MultiSelect({name, id, value, options, onChange, onBlur, error}) {
     const seed = useUIDSeed();
     const classesButton = [classes.root__button];
     const [state, setState] = useState({
         open: false
     });
+    const classesControl = [
+        classes.root
+    ];
+
+    if (error) {
+        classesControl.push(classes['root--error'])
+    }
+
     const openDropdown = function () {
         const isOpen = state.open;
         setState({
@@ -33,7 +41,7 @@ function MultiSelect({name, id, value, options, onChange}) {
     }
 
     return (
-        <div className={classes.root} id={id}>
+        <div className={classesControl.join(' ')} id={id} onBlur={onBlur}>
             {value.length > 0 ?
                 <div className={classes.root__chips} onClick={openDropdown}>
                     {value.map((option) => {
@@ -51,7 +59,7 @@ function MultiSelect({name, id, value, options, onChange}) {
                 :
                 <div className={classes.root__placeholder} onClick={openDropdown}>Select {name}</div>
             }
-            {!!options.length && state.open && <ul className={classes.root__list}>
+            {!!options.length && state.open && <ul className={classes.root__list} onBlur={onBlur}>
                 {options.map((option) => {
                     return (
                         <li key={seed(option)} className={classes['root__list-item']}>
@@ -65,7 +73,7 @@ function MultiSelect({name, id, value, options, onChange}) {
                     )
                 })}
             </ul>}
-            <button className={classesButton.join(' ')} onClick={openDropdown}>
+            <button className={classesButton.join(' ')} onClick={openDropdown} onBlur={onBlur}>
                 Open dropdown
             </button>
         </div>

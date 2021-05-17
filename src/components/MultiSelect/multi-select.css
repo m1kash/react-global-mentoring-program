@@ -3,6 +3,10 @@
     composes: root from '../TextInput/text-input.css';
 }
 
+.root--error {
+    composes: root--error from '../TextInput/text-input.css';
+}
+
 .root__placeholder {
     color: var(--portal-grey-ligher);
 }

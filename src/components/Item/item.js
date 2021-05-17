@@ -31,7 +31,7 @@ function Item( { info,openMovieDialog } ) {
         if (openMovieDialog === id) {
             window.scrollTo(0, 0);
         }
-    }, [openMovieDialog]);
+    }, []);
     return (
         <>
             <div className={classes.root} onClick={showDetailsHandle}>

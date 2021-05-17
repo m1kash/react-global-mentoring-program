@@ -9,7 +9,7 @@ function Popup({title, children, buttons, closeAction}) {
     const seed = useUIDSeed();
 
     return (
-        <div className={classes.root}>
+        <div className={classes.root} onClick={e => e.stopPropagation()}>
             <a className={classes.root__close} onClick={closeAction}>
                 X
             </a>

@@ -4,7 +4,7 @@ import FormWrap from '../Form';
 import {connect, useDispatch} from 'react-redux';
 import { editMovieRequest, loadMovieDetailsRequest, loadMovies} from '../../actions/api';
 import {isEmpty} from 'lodash';
-import {actionLoadMovies} from '../../actions/actionLoadMovies';
+import {actionLoadMovies} from '../../actions/movie';
 import DEFAULT_PROPS_FORM from '../../constants/default-props-form';
 import {validationScheme} from '../../validation-scheme';
 
@@ -79,7 +79,7 @@ function EditMoviePopup({
 }
 
 function mapStateToProps (store) {
-    const {form, genres, app} = store;
+    const {genres, app} = store;
 
     return {
         genresBase: genres,

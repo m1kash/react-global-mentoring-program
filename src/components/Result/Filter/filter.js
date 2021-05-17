@@ -1,10 +1,8 @@
 import React from 'react';
 import {useUIDSeed} from 'react-uid';
-import classes from './filter.css';
 import {connect, useDispatch} from 'react-redux';
-import {setFilter} from '../../../actions/actionSetFilter';
-import {loadMovies} from '../../../actions/api';
-import {actionLoadMovies} from '../../../actions/actionLoadMovies';
+import classes from './filter.css';
+import {setFilter} from '../../../actions/app';
 
 
 function Filter({genres, app}) {
@@ -15,13 +13,10 @@ function Filter({genres, app}) {
         ...genres
     ];
     const seed = useUIDSeed();
-    const setMovies = result => dispatch(actionLoadMovies(result));
     const onClick = function (value) {
-
         dispatch(setFilter({
             filter: value
-        }))
-        loadMovies( 'movies', setMovies, app);
+        }));
     }
 
     return (

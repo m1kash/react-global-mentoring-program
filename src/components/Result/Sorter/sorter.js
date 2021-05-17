@@ -1,11 +1,10 @@
 import React, {useEffect} from 'react';
-import classes from './sorter.css';
 import {useUIDSeed} from 'react-uid';
-import {actionLoadMovies} from '../../../actions/actionLoadMovies';
-import {loadMovies} from '../../../actions/api';
 import {connect, useDispatch} from 'react-redux';
-import {setSort} from '../../../actions/actionSetSort';
-import {debounce} from 'lodash';
+import classes from './sorter.css';
+import {loadMovies} from '../../../actions/api';
+import {actionLoadMovies} from '../../../actions/movie';
+import {setSort} from '../../../actions/app';
 import useDebounce from '../../../hooks/useDebounce';
 
 function Sorter({app}) {
@@ -31,7 +30,11 @@ function Sorter({app}) {
     const setMovies = result => dispatch(actionLoadMovies(result));
     const loadMoviesDelay = useDebounce(app, 500);
     useEffect(()=> {
-        loadMovies( 'movies', setMovies, app);
+        if(app.search) {
+            loadMovies( 'movies', setMovies, app);
+        } else {
+            setMovies({data: []})
+        }
     }, [loadMoviesDelay])
     const onChange = (e) => {
         dispatch(setSort({

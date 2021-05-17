@@ -6,7 +6,7 @@ import Counter from '../Counter';
 import {object} from 'prop-types';
 import {connect} from 'react-redux';
 
-function Toolbar({ count }) {
+function Toolbar({ count = 0 }) {
 
     return (
         <>

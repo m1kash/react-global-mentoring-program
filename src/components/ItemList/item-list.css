@@ -9,3 +9,14 @@
     '. . .'
     '. . .';
 }
+
+.root__404 {
+    grid-row: 2  / 4;
+    grid-column: 1 / 4;
+    margin-bottom: 40px;
+    color: var(--portal-white);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 100;
+    font-size: 40px;
+}

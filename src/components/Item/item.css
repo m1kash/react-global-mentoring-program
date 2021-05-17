@@ -3,6 +3,12 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    text-decoration: none;
+}
+
+.root:hover {
+    text-decoration: none;
+    color: transparent;
 }
 
 .root__info {

@@ -25,11 +25,6 @@ const app = (state = initialState  , {type, payload}) => {
                 ...state,
                 ...payload
             };
-        case types.OPEN_MOVIE:
-            return  {
-                ...state,
-                openMovie: payload
-            };
         default:
             return state;
     }

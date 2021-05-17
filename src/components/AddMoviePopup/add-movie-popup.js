@@ -6,12 +6,12 @@ import DEFAULT_PROPS_FORM from '../../constants/default-props-form';
 import { validationScheme } from '../../validation-scheme';
 import {connect, useDispatch} from 'react-redux';
 import {createMovieRequest, loadMovies} from '../../actions/api';
-import {actionLoadMovies} from '../../actions/actionLoadMovies';
+import {actionLoadMovies} from '../../actions/movie';
 
 function AddMoviePopup({
     title,
     closeAction,
-    genresBase,
+    genres,
     app
 }) {
     const formRef = useRef();
@@ -56,7 +56,7 @@ function AddMoviePopup({
     return (
         <Popup title={title} closeAction={closeAction} buttons={buttons}>
             <FormWrap
-                genresBase={genresBase}
+                genresBase={genres}
                 defaultValueForm={DEFAULT_VALUE_FORM}
                 defaultProps={DEFAULT_PROPS_FORM}
                 validationScheme={validationScheme}
@@ -68,10 +68,10 @@ function AddMoviePopup({
 }
 
 function mapStateToProps (store) {
-    const {form, genres, app} = store;
+    const {genres, app} = store;
 
     return {
-        genresBase: genres,
+        genres,
         app
     }
 }

@@ -1,0 +1,16 @@
+.root {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    height: 100%;
+    background: var(--portal-grey-darker);
+}
+
+.root__text {
+    width: 100%;
+    font-size: 200px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+}

@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import logoIMG from './logo.png';
+import {Link} from 'react-router-dom';
 
 function Logo( {
-    link,
     onClick,
     nameSite,
     description,
@@ -12,14 +12,13 @@ function Logo( {
 }) {
 
     return (
-        <a href={link} onClick={onClick} title={` ${nameSite} - ${description}`}>
+        <Link to='/' onClick={onClick} title={` ${nameSite} - ${description}`}>
             <img src={logoIMG} alt={nameSite} height={height} width={width}/>
-        </a>
+        </Link>
     )
 }
 
 Logo.propTypes = {
-    link: PropTypes.string,
     nameSite: PropTypes.string,
     description: PropTypes.string,
     height: PropTypes.number,

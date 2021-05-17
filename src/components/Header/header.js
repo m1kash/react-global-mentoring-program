@@ -9,7 +9,7 @@ function Header() {
     return (
         <header className={classes.root}>
             <Container type='sp' wrap={true}>
-                <Logo link='#' nameSite='netflixRoulette' description='Better portal'/>
+                <Logo nameSite='netflixRoulette' description='Better portal'/>
                 <AddMovie/>
                 <Search/>
             </Container>

@@ -9,10 +9,12 @@ import {setSearch} from '../../actions/app';
 
 function Search() {
     const [searchValue, setSearchValue] = useState();
-    const { phrase } = useParams();
+    const { phrase, movieId } = useParams();
     const history = useHistory();
     useEffect(function () {
-        setParam(phrase);
+        if (typeof movieId === 'undefined') {
+            setParam(phrase);
+        }
     }, [phrase])
     const goSearch = (value) => history.push(value ? `/search/${value}` : '/');
     const dispatch = useDispatch();

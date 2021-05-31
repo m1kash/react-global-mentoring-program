@@ -15,7 +15,7 @@ function App() {
                     <Route exact path='/' component={Home} />
                     <Route exact path='/movies/:movieId' component={MovieDetailsPage} />
                     <Route exact path='/search/:phrase' component={Home} />
-                    <Route path='*' component={Error} />
+                    <Route exact path='*' component={Error} />
                 </Switch>
                 <Footer>
                     <Logo nameSite='netflixRoulette' description='Better portal'/>

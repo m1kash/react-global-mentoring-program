@@ -12,9 +12,10 @@ function AddMoviePopup({
     title,
     closeAction,
     genres,
+    formRef,
     app
 }) {
-    const formRef = useRef();
+
     const dispatch = useDispatch();
     const resetForm = function () {
         const {resetForm} = formRef.current;
@@ -31,7 +32,7 @@ function AddMoviePopup({
             if (isValid) {
                 closeAction(e);
             }
-        });
+        }).catch(err => console.error(err))
     };
     const buttons = [
         {

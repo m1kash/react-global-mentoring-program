@@ -13,7 +13,7 @@ function DateInput({placeholder, onChange, id, onBlur, value = '', error}) {
 
     return (
         <>
-            <input placeholder={placeholder} id={id} value={value} className={classesControl} type="text"
+            <input placeholder={placeholder} id={id} value={value} className={classesControl.join(' ')} type="text"
                    readOnly={true}/>
             <input id={id} value={value} onChange={onChange} onBlur={onBlur} className={classes.root__datepicker} type="date"/>
         </>

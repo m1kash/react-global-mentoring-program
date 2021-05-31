@@ -6,7 +6,6 @@ const initialState = {
     filter: '',
     searchBy: 'title',
     search: '',
-    openMovie: false
 };
 const app = (state = initialState  , {type, payload}) => {
     switch (type) {

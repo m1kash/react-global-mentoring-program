@@ -34,7 +34,7 @@ function Filter({genres, app}) {
                     cssClasses.push(classes['root__item--active'])
                 }
 
-                return <li className={cssClasses.join(' ')} key={seed(result.text)} onClick={onClick.bind(null, result.value)}>{result      .text}</li>
+                return <li className={cssClasses.join(' ')} key={seed(result.text)} onClick={onClick.bind(null, result.value)}>{result.text}</li>
             })}
         </ul>
     )

@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1622504574810" clover="3.2.0">
+  <project timestamp="1622504574810" name="All files">
+    <metrics statements="338" coveredstatements="173" conditionals="105" coveredconditionals="47" methods="127" coveredmethods="50" elements="570" coveredelements="270" complexity="0" loc="338" ncloc="338" packages="45" files="94" classes="94"/>
+    <package name="src">
+      <metrics statements="6" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/index.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="store.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/store.js">
+        <metrics statements="5" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.actions">
+      <metrics statements="17" coveredstatements="6" conditionals="5" coveredconditionals="0" methods="17" coveredmethods="3"/>
+      <file name="api.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/actions/api.js">
+        <metrics statements="11" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="11" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="47" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="app.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/actions/app.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+      <file name="movie.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/actions/movie.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.AddMovie">
+      <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="add-movie.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/AddMovie/add-movie.js">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/AddMovie/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.AddMoviePopup">
+      <metrics statements="20" coveredstatements="16" conditionals="2" coveredconditionals="1" methods="9" coveredmethods="5"/>
+      <file name="add-movie-popup.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/AddMoviePopup/add-movie-popup.js">
+        <metrics statements="20" coveredstatements="16" conditionals="2" coveredconditionals="1" methods="9" coveredmethods="5"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="32" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
+        <line num="49" count="4" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="57" count="4" type="stmt"/>
+        <line num="72" count="4" type="stmt"/>
+        <line num="74" count="4" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/AddMoviePopup/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.App">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="app.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/App/app.js">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/App/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.Button">
+      <metrics statements="11" coveredstatements="11" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <file name="button.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Button/button.js">
+        <metrics statements="11" coveredstatements="11" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="7" count="11" type="stmt"/>
+        <line num="12" count="11" type="cond" truecount="3" falsecount="0"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="24" count="11" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Button/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.Container">
+      <metrics statements="8" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="container.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Container/container.js">
+        <metrics statements="8" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="14" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Container/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.Content">
+      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="content.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Content/content.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Content/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.DateInput">
+      <metrics statements="4" coveredstatements="4" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <file name="date-input.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/DateInput/date-input.js">
+        <metrics statements="4" coveredstatements="4" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="10" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/DateInput/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.DeleteMoviePopup">
+      <metrics statements="9" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
+      <file name="delete-movie-popup.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/DeleteMoviePopup/delete-movie-popup.js">
+        <metrics statements="9" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/DeleteMoviePopup/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.EditMoviePopup">
+      <metrics statements="26" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="10" coveredmethods="0"/>
+      <file name="edit-movie-popup.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/EditMoviePopup/edit-movie-popup.js">
+        <metrics statements="26" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="10" coveredmethods="0"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="38" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="63" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="84" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/EditMoviePopup/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.ErrorBoundary">
+      <metrics statements="4" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="error-boundary.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/ErrorBoundary/error-boundary.js">
+        <metrics statements="4" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="28" count="0" type="cond" truecount="0" falsecount="4"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/ErrorBoundary/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.Field">
+      <metrics statements="5" coveredstatements="4" conditionals="7" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="field.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Field/field.js">
+        <metrics statements="5" coveredstatements="4" conditionals="7" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="8" count="28" type="stmt"/>
+        <line num="19" count="28" type="cond" truecount="1" falsecount="1"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="23" count="28" type="stmt"/>
+        <line num="32" count="28" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Field/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.Footer">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="footer.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Footer/footer.js">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Footer/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.Form">
+      <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="3"/>
+      <file name="form.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Form/form.js">
+        <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="3"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="20" count="28" type="stmt"/>
+        <line num="30" count="28" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="4" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="36" count="28" type="stmt"/>
+        <line num="39" count="4" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Form/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.Header">
+      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="header.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Header/header.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Header/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.Heading">
+      <metrics statements="6" coveredstatements="6" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="heading.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Heading/heading.js">
+        <metrics statements="6" coveredstatements="6" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="6" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="8" count="8" type="stmt"/>
+        <line num="13" count="8" type="stmt"/>
+        <line num="15" count="8" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Heading/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.Item">
+      <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Item/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="item.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Item/item.js">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Item.Date">
+      <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="date.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Item/Date/date.js">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Item/Date/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.Item.Delete">
+      <metrics statements="2" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="delete.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Item/Delete/delete.js">
+        <metrics statements="2" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Item/Delete/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.Item.Edit">
+      <metrics statements="2" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="edit.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Item/Edit/edit.js">
+        <metrics statements="2" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Item/Edit/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.Item.Genre">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="genre.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Item/Genre/genre.js">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Item/Genre/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.Item.Image">
+      <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="image.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Item/Image/image.js">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.ItemList">
+      <metrics statements="8" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/ItemList/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="item-list.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/ItemList/item-list.js">
+        <metrics statements="8" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Logo">
+      <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Logo/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="logo.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Logo/logo.js">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.MovieDetails">
+      <metrics statements="10" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/MovieDetails/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="movie-details.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/MovieDetails/movie-details.js">
+        <metrics statements="10" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.MultiSelect">
+      <metrics statements="24" coveredstatements="23" conditionals="13" coveredconditionals="11" methods="7" coveredmethods="6"/>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/MultiSelect/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="multi-select.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/MultiSelect/multi-select.js">
+        <metrics statements="24" coveredstatements="23" conditionals="13" coveredconditionals="11" methods="7" coveredmethods="6"/>
+        <line num="7" count="11" type="stmt"/>
+        <line num="8" count="11" type="stmt"/>
+        <line num="9" count="11" type="stmt"/>
+        <line num="12" count="11" type="stmt"/>
+        <line num="16" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="20" count="11" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="26" count="11" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="30" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="37" count="11" type="stmt"/>
+        <line num="39" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="43" count="11" type="stmt"/>
+        <line num="48" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="64" count="6" type="stmt"/>
+        <line num="83" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Popup">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Popup/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="popup.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Popup/popup.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="23" count="8" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.PopupContainer">
+      <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/PopupContainer/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="popup-container.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/PopupContainer/popup-container.js">
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Rating">
+      <metrics statements="7" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Rating/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="rating.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Rating/rating.js">
+        <metrics statements="7" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Result">
+      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Result/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="result.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Result/result.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Result.Counter">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="counter.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Result/Counter/counter.js">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Result/Counter/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.Result.Filter">
+      <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
+      <file name="filter.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Result/Filter/filter.js">
+        <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="25" count="45" type="stmt"/>
+        <line num="26" count="45" type="stmt"/>
+        <line num="30" count="45" type="stmt"/>
+        <line num="31" count="45" type="cond" truecount="2" falsecount="0"/>
+        <line num="33" count="45" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="3" type="stmt"/>
+        <line num="37" count="45" type="stmt"/>
+        <line num="44" count="3" type="stmt"/>
+        <line num="46" count="3" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Result/Filter/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.Result.Sorter">
+      <metrics statements="15" coveredstatements="14" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="6"/>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Result/Sorter/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="sorter.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Result/Sorter/sorter.js">
+        <metrics statements="15" coveredstatements="14" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="6"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="31" count="3" type="stmt"/>
+        <line num="32" count="3" type="stmt"/>
+        <line num="33" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="39" count="3" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="46" count="3" type="stmt"/>
+        <line num="51" count="9" type="stmt"/>
+        <line num="58" count="5" type="stmt"/>
+        <line num="60" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Result.Toolbar">
+      <metrics statements="4" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Result/Toolbar/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="toolbar.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Result/Toolbar/toolbar.js">
+        <metrics statements="4" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Search">
+      <metrics statements="14" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="5" coveredmethods="0"/>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Search/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="search.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Search/search.js">
+        <metrics statements="14" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="19" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.TextInput">
+      <metrics statements="4" coveredstatements="4" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/TextInput/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="text-input.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/TextInput/text-input.js">
+        <metrics statements="4" coveredstatements="4" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="5" count="21" type="stmt"/>
+        <line num="9" count="21" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="13" count="21" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Title">
+      <metrics statements="2" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Title/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="title.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/Title/title.js">
+        <metrics statements="2" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.ToggleMenu">
+      <metrics statements="10" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/ToggleMenu/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="toggle-menu.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/components/ToggleMenu/toggle-menu.js">
+        <metrics statements="10" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.constants">
+      <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="actions.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/constants/actions.js">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+      </file>
+      <file name="app.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/constants/app.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="3" type="stmt"/>
+      </file>
+      <file name="default-props-form.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/constants/default-props-form.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+      </file>
+      <file name="default-value-form.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/constants/default-value-form.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.hooks">
+      <metrics statements="15" coveredstatements="14" conditionals="4" coveredconditionals="1" methods="6" coveredmethods="5"/>
+      <file name="useDebounce.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/hooks/useDebounce.js">
+        <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+      </file>
+      <file name="useToggle.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/hooks/useToggle.js">
+        <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="3" count="1" type="cond" truecount="0" falsecount="2"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="home.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/pages/home.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+      <file name="movie-details.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/pages/movie-details.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.Error">
+      <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="error.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/pages/Error/error.js">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/pages/Error/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.reducers">
+      <metrics statements="20" coveredstatements="16" conditionals="15" coveredconditionals="11" methods="5" coveredmethods="4"/>
+      <file name="app.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/reducers/app.js">
+        <metrics statements="7" coveredstatements="6" conditionals="5" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="10" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="18" type="cond" truecount="3" falsecount="1"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="28" count="16" type="stmt"/>
+      </file>
+      <file name="genres.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/reducers/genres.js">
+        <metrics statements="4" coveredstatements="3" conditionals="3" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="18" count="18" type="cond" truecount="1" falsecount="1"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="22" count="18" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/reducers/index.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="7" count="3" type="stmt"/>
+      </file>
+      <file name="movie.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/reducers/movie.js">
+        <metrics statements="3" coveredstatements="2" conditionals="3" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="4" count="18" type="cond" truecount="1" falsecount="1"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="8" count="18" type="stmt"/>
+      </file>
+      <file name="movies.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/reducers/movies.js">
+        <metrics statements="5" coveredstatements="4" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="1"/>
+        <line num="3" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="18" type="cond" truecount="2" falsecount="1"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="16" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.validation-scheme">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.js" path="/Users/yaroslav/PhpstormProjects/react-global-mentoring-program/src/validation-scheme/index.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="2" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

@@ -3,7 +3,6 @@ import classes from './field.css';
 import TextInput from '../TextInput';
 import DateInput from '../DateInput';
 import MultiSelect from '../MultiSelect';
-import {connect, useDispatch} from 'react-redux';
 
 function Field({name, id, type = 'text', placeholder, options = [], value, error, isTouch, onChange, onBlur}) {
     const props = {
@@ -44,12 +43,4 @@ function Field({name, id, type = 'text', placeholder, options = [], value, error
     );
 }
 
-function mapStateToProps (store) {
-    const {form} = store;
-
-    return {
-        formValues: form,
-    }
-}
-
-export default connect(mapStateToProps)(Field);
+export default Field;

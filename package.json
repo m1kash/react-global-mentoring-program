@@ -2,6 +2,7 @@
   "name": "react-g-p",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://m1kash.github.io/react-global-mentoring-program",
   "main": "src/index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack serve --config webpack.config.js",
